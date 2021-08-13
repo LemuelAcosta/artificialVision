@@ -1,27 +1,37 @@
-#container {
+.homeIlustration{
+  width: 60%;
+  margin: auto;
+  display: block;
+  margin-top: 15vh;
+}
+.homeTitle{
+  margin: 0px;
+  padding: 0px;
+  font-size: 6vw;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 7vh;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.homeSubTitle{
+  margin: 0px;
+  padding: 0px;
+  font-size: 4.5vw;
+  text-align: center;
+  margin-top: 2vh;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.homeButton{
+  margin: 0px;
+  padding: 0px;
+  width: 85%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-top: 30vh;
+  --border-radius: 10px
 }
-
-#container a {
-  text-decoration: none;
+.registerText{
+  margin: 0px;
+  padding: 0px;
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 4vh;
 }
