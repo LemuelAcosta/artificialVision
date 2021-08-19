@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <img class="loginIlustration" src="../../../../assets/icon/undraw_Camera_re_cnp4.svg" alt="Hands-R" title="Hands-R">
+  <h3 class="loginTitle">Hands-R</h3>
+  <h5 class="loginSubTitle">Iniciar sesión</h5>
+  <form class="loginForm" [formGroup]="loginForm">
+    <ion-item class="formItem">
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item class="formItem">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+  </form>
+  <h6 class="passwordText" (click)="showModal()">¿Olvidaste tu contraseña?</h6>
+  <ion-button class="loginButton ion-text-capitalize" (click)="loginUser()" [disabled]="loginForm.invalid">Iniciar sesión</ion-button>
+  <h6 class="loginText" (click)="goToRegister()">¿No tienes cuenta? Regístrate</h6>
 </ion-content>

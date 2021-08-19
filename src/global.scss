@@ -32,3 +32,11 @@
 *{
   font-family: 'Product Sans', sans-serif !important;
 }
+.passwordModal .modal-wrapper {
+  width: 100%;
+  height: 43%;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
