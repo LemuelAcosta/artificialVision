@@ -1,0 +1,53 @@
+.registerIlustration{
+  width: 60%;
+  margin: auto;
+  display: block;
+  margin-top: 10vh;
+}
+.registerTitle{
+  margin: 0px;
+  padding: 0px;
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 7vh;
+}
+.registerSubTitle{
+  margin: 0px;
+  padding: 0px;
+  font-size: 4.5vw;
+  text-align: center;
+  margin-top: 2vh;
+}
+.registerButton{
+  margin: 0px;
+  padding: 0px;
+  width: 85%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-top: 5vh;
+  --border-radius: 10px
+}
+.registerText{
+  margin: 0px;
+  padding: 0px;
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 4vh;
+}
+.formItem{
+  width: 85%;
+  margin: auto;
+  display: block;
+  --background: none;
+  --highlight-color: #F50057;
+  --highlight-color-focused: #F50057;
+  --highlight: #F50057;
+  margin-top: 2vh;
+}
+.item-has-focus.label-floating.sc-ion-label-md-h, .item-has-focus .label-floating.sc-ion-label-md-h, .item-has-placeholder.label-floating.sc-ion-label-md-h, .item-has-placeholder .label-floating.sc-ion-label-md-h, .item-has-value.label-floating.sc-ion-label-md-h, .item-has-value .label-floating.sc-ion-label-md-h {
+  color: #F50057;
+}
+.item-has-focus.label-floating.sc-ion-label-ios-h, .item-has-focus .label-floating.sc-ion-label-ios-h, .item-has-placeholder.label-floating.sc-ion-label-ios-h, .item-has-placeholder .label-floating.sc-ion-label-ios-h, .item-has-value.label-floating.sc-ion-label-ios-h, .item-has-value .label-floating.sc-ion-label-ios-h {
+color: #F50057;
+}

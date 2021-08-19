@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <img class="registerIlustration" src="../../../../assets/icon/undraw_Camera_re_cnp4.svg" alt="Hands-R" title="Lengvapp-Drivers">
+  <h3 class="registerTitle">Hands-R</h3>
+  <h5 class="registerSubTitle">Crear cuenta</h5>
+  <form class="registerForm" [formGroup]="registerForm">
+    <ion-item class="formItem">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item class="formItem">
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item class="formItem">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+  </form>
+  <ion-button class="registerButton ion-text-capitalize" (click)="registerUser()" [disabled]="registerForm.invalid">Crear cuenta</ion-button>
+  <h6 class="registerText" (click)="goToLogin()">¿Ya tienes cuenta? Iniciar sesión</h6>
 </ion-content>
