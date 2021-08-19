@@ -35,4 +35,20 @@ export class AuthenticationService {
     }).catch((error) => ({status: 'error', data: error}));
   }
   // Creando un nuevo usuario en el sistema
+  // Iniciando la sesion de un usuario en el sistema
+  async loginUser(authData): Promise<any> {
+    return await this.userAuth.signInWithEmailAndPassword(authData.email, authData.password).then((returnedData) => (
+      {status: 'success', data: returnedData.user}
+    )).catch((error) => ({status: 'error', data: error}));
+  }
+  // Iniciando la sesion de un usuario en el sistema
+  // Recuperando la cuenta de un usuario
+  async recoverPassword(authData): Promise<any> {
+    return await this.userAuth.sendPasswordResetEmail(authData.email).then((returnedData) => (
+      {data: returnedData, status: 'success'}
+    )).catch((error) => (
+      {data: error, status: 'error'}
+    ));
+  }
+  // Recuperando la cuenta de un usuario
 }
