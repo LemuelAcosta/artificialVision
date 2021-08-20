@@ -1,9 +1,13 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>recognition</ion-title>
+    <ion-title class="ion-text-center">Reconocimiento de gestos con las manos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

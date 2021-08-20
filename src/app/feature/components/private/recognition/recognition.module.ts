@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RecognitionPageRoutingModule } from './recognition-routing.module';
 
 import { RecognitionPage } from './recognition.page';
+import { CameraResultPageModule } from '../camera-result/camera-result.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecognitionPageRoutingModule
+    RecognitionPageRoutingModule,
+    CameraResultPageModule
   ],
   declarations: [RecognitionPage]
 })

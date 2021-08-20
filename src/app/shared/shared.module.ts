@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GesturePipe } from '../core/pipes/gestures/gesture.pipe';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    GesturePipe
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -13,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   exports: [
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GesturePipe
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,28 @@
+.pictureToCompare{
+  margin: 0px;
+  padding: 0px;
+  width: 80%;
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  margin-top: 5vh;
+}
+.passwordButton{
+  --background: #F50057;
+  --border-radius: 5px;
+  width: 95%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+.cancelButton{
+  --border-color: #F50057;
+  --border-radius: 5px;
+  width: 95%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-top: 2.5vh;
+}

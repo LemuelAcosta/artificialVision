@@ -12,11 +12,14 @@ import { FeatureModule } from './feature/feature.module';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { Camera } from '@ionic-native/camera/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,12 +34,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
+    AngularFireStorageModule,
+    HttpClientModule
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Camera,
     SplashScreen,
-    StatusBar
+    StatusBar,
+    AndroidPermissions,
+    ScreenOrientation,
   ],
   bootstrap: [AppComponent],
 })

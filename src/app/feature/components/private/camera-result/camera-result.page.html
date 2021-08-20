@@ -1,0 +1,6 @@
+<ion-content style="overflow: hidden; overflow-y: auto;">
+  <img src="{{pictureToShow}}" alt="" class="pictureToCompare">
+  <h1 class="name" *ngIf="showGesture" >Gesto encontrado {{ gesture | gesture }}</h1>
+  <ion-button class="passwordButton ion-text-capitalize" (click)="uploadFile()">Realizar reconocimiento</ion-button>
+  <ion-button class="cancelButton ion-text-capitalize" fill="outline" (click)="closeModal()">Cancelar</ion-button>
+</ion-content>
